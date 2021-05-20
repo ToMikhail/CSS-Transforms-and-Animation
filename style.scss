@@ -1,3 +1,131 @@
-body {
-  background: gray;
+* {
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+.wrap-outer {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+.wrap-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex-wrap  {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.flex-wrap-center {
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-wrap {
+  display: flex;
+}
+.flex-col-wrap {
+  margin: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.square {
+  width: 100px;
+  height:100px;
+  border-radius: 25px;
+  transition: 1s;
+}
+.square-violet {
+  background: rgb(95, 38, 141);
+}
+.square-green {
+  background-color: rgb(26, 230, 60);
+}
+.square-red {
+  background: coral;
+}
+.title {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: rgb(197, 77, 157);
+}
+.title-section {
+  color: rgba(194, 196, 89, 0.979);
+}
+.description {
+  color: rgb(223, 132, 132);
+  font-style: italic;
+  font-size: 1rem;
+}
+.name-func {
+  margin-top: 2.5rem;
+  color: rgb(58, 100, 190);
+}
+.name-func-description {
+  color: rgb(223, 132, 132);
+}
+.link {
+  text-decoration: none;
+  color: rgb(87, 223, 233);
+}
+.link:hover {
+  cursor: pointer;
+}
+.btn-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.btn {
+  padding: 10px 20px;
+  background: rgb(70, 67, 67);
+  color: rgb(223, 132, 132);
+}
+.btn:hover {
+  cursor: pointer;
+  color: rgb(87, 223, 233);
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+.animation-css {
+  height: 7rem;
+  
+}
+.bg-grey {
+  background: rgb(61, 61, 61);
+}
+// .square-green {
+//   animation: circle 5s linear 0s infinite;
+// }
+
+// .square-red:hover {
+//   transform: translateX(100px);
+// }
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

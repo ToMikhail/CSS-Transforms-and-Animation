@@ -1,13 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>CSS Transform ans Animation</title>
-</head>
-<body>
-  <script defer src="./script.js" ></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Transform and Animation</title>
+  </head>
+  <body>
+    <div class="wrap-outer">
+      <div class="wrap-inner">
+        <section class="flex-wrap function transform">
+          <div class="flex-col-wrap object">
+            <div class="square square-violet"></div>
+          </div>
+          <div class="flex-col-wrap">
+            <div class="content">
+              <h2 class="title">transform functions</h2>
+              <p class="description">
+                Read more:
+                <a
+                  class="link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"
+                  >https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+                </a>
+              </p>
+              <div class="btn-wrap">
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-func-scale">scale(1.5)</div>
+                  <div class="btn text-btn trans-func-scale-x">scaleX(2)</div>
+                  <div class="btn text-btn trans-func-scale-y">scaleY(2)</div>
+                  <div class="btn text-btn trans-func-scale-1">
+                    scale(0.5, 2)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-func-translate">
+                    translate(-150%,-100%)
+                  </div>
+                  <div class="btn text-btn trans-func-translate-x">
+                    translateX(100%)
+                  </div>
+                  <div class="btn text-btn trans-func-translate-y">
+                    translateY(100%)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-func-rotation">
+                    rotate(45deg)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-func-skew-x">skewX(30deg)</div>
+                  <div class="btn text-btn trans-func-skew-y">skewY(30deg)</div>
+                  <div class="btn text-btn trans-func-skew">
+                    skew(30deg, 20deg)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-func-matrix">
+                    matrix(1.5,0,.5,1.5,50,0)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex-wrap transform-origin">
+          <div class="flex-col-wrap">
+            <div class="content">
+              <h2 class="title">transform origin</h2>
+              <div class="flex-row-wrap">
+                <div class="btn text-btn trans-origin-center">center</div>
+                <div class="btn text-btn trans-origin-not-center">
+                  -50% 50%)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col-wrap object">
+            <div class="square square-green"></div>
+          </div>
+        </section>
+        <section class="flex-wrap function transform-multiple">
+          <div class="flex-col-wrap object">
+            <div class="square square-red"></div>
+          </div>
+          <div class="flex-col-wrap">
+            <div class="content">
+              <h2 class="title">multiple transform</h2>
+              <div class="btn-wrap">
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-mult-translate-x1">
+                    translateX( 100%)
+                  </div>
+                  <div class="btn text-btn trans-mult-translate-x2">
+                    translateX(-100%)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-mult-translate-y1">
+                    translateY( 100%)
+                  </div>
+                  <div class="btn text-btn trans-mult-translate-y2">
+                    translateY(-100%)
+                  </div>
+                </div>
+                <div class="flex-row-wrap">
+                  <div class="btn text-btn trans-mult-rotate1">
+                    rotate( 90deg)
+                  </div>
+                  <div class="btn text-btn trans-mult-rotate2">
+                    rotate(-90deg)
+                  </div>
+                </div>
+                <p class="name-func">
+                  transform: <span class="name-func-description">none</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+        <section class="flex-wrap animation-css flex-wrap-center bg-grey">
+          <h2 class="title title-section">CSS animation</h2>
+        </section>
+      </div>
+    </div>
+    <div class="wrap-outer">
+      <div class="wrap-inner">
+        <section class="flex-wrap flex-wrap-center">
+          <h2 class="title">CSS transition</h2>
+          <ul>
+            <li class="name-func-description">
+              <span class="name-func">transition: </span>property duration
+              timing-function delay
+            </li>
+            <li class="name-func-description">JS Event:</li>
+          </ul>
+          <p class="description">
+            Animatable CSS properties:
+            <a
+              class="link"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+              >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+            </a>
+          </p>
+          <p class="description">
+            Cubic-bezier builder:
+            <a
+              class="link"
+              href="http://www.roblaplaca.com/examples/bezierBuilder/"
+              >http://www.roblaplaca.com/examples/bezierBuilder/
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+        <section class="flex-wrap flex-wrap-center bg-grey">
+          <h2 class="title">CSS animation & keyframes</h2>
+          <ul>
+            <li class="name-func-description">
+              <span class="name-func">animation: </span>animation-name duration
+              timing-function delay iteration-count direction
+            </li>
+            <li class="name-func-description">
+              <span class="name-func">@keyframes </span>animation-name
+              <pre>
+                <code class="name-func-description">
+                  {
+                    from { }
+                    to { }
+                  }
+                </code>
+              </pre>
+            </li>
+            <li class="name-func-description">
+              <span class="name-func">animation-play-state: </span
+              >running/paused
+            </li>
+            <li class="name-func-description">JS Event: animationend</li>
+          </ul>
+          <p class="description">
+            Подробнее про animation на русском:
+            <a class="link" href="https://html5book.ru/css3-animation/"
+              >https://html5book.ru/css3-animation/
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="outer-wrap">
+      <div class="inner-wrap">
+        <section class="flex-wrap flex-wrap-center"></section>
+      </div>
+    </div>
+
+    <script defer src="./script.js"></script>
+  </body>
 </html>
